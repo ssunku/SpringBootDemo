@@ -17,7 +17,11 @@
     </resultMap>
 
     <select id="getTestPlans" resultMap="TestPlanResultMap">
-        select * from testplan_info;
+        select * from testplan_info where createdtime &gt; #{currentdate} and createdtime &lt; #{nextdate};
+    </select>
+
+    <select id="getDistinctDates" resultType="String">
+        SELECT DISTINCT DATE_FORMAT(createdtime,'%Y-%m-%d') AS date fROM testplan_info;
     </select>
 
 

@@ -22,7 +22,6 @@
         <package name="com.springboot.demo.model"/>
     </typeAliases>
     <mappers>
-        <mapper resource="mapper/TestCase.xml"/>
         <mapper resource="mapper/TestPlan.xml"/>
     </mappers>
 

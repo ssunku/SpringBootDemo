@@ -16,52 +16,46 @@
 <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet"/>
 <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 <link rel="stylesheet" href="css/welcome.css"></link>
-<%-- <script src="js/welcome.js"> </script> --%>
+<script src="js/welcome.js"> </script>
 </head>
 
 <body>
 
 <div id="header123">
 
- <h4> <center>Automation Reports</center></h4>
+ <h2> <center>Automation Reports</center></h2>
 
 </div>
-
 <div id="contentbody">
-   <%-- <div id="rightnav">
-       <select class="js-example-responsive" style="width: 20%" id="buildversion">
+	<div id="menubar">
+      <select class="js-example-responsive" style="width: 18%" id="distinctdates">
       </select>
-      <table class="table table-bordered"></div> --%>
-      <table class="table table-bordered">
-      <tr>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      <th>fdfdfdf</th>
-      </tr>
-      </table>
+       <select class="js-example-responsive" style="width: 20%" id="platform">
+      	<option>API</option>
+      	<option>Web</option>
+      	<option>Mobile</option>
+      </select>
+	</div>
+   <div id="contentbody">
+    <ul class="nav nav-tabs">
+     <li class="active"><a data-toggle="tab" href="#testplan">Test Plan</a></li>
+     <li><a data-toggle="tab" href="#testcase">TestCase</a></li>
+     <li><a data-toggle="tab" href="#testcasedtls">TestCase Details</a></li>
+    </ul>
+    <div class="tab-content">
+      <div id="testplan" class="tab-pane fade in active">
+       <table class="table table-bordered">
+            </table>
+      </div>
+      <div id="testcase" class="tab-pane fade">
+       <h2> Testcase tab called</h2>
+      </div>
+      <div id="testcasedtls" class="tab-pane fade">
+      <h2> Testcase details tab called</h2>
+            </div>
+
     </div>
-
-
+<div>
 
 </body>
 </html>
