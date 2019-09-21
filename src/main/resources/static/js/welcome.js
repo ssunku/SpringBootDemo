@@ -14,6 +14,11 @@ $(document).ready(function() {
                 testplanresults();
         });
 
+        $('.table').on("click","#tablebody tr td a" ,function(){
+                                var data=$(this).text();
+                                console.log(data);
+                           });
+
       });
 
       function testplanresults(){
@@ -23,10 +28,15 @@ $(document).ready(function() {
                    $(".table").append("<thead class=thead-dark><tr><th scope=col>planid</th><th scope=col>planname</th><th scope=col>createdtime</th> <th scope=col>endtime</th> <th scope=col>executiontime</th><th scope=col>passcount</th><th scope=col>failcount</th> <th scope=col>skipcount</th><th scope=col>totaltests</th></tr></thead>");
                        for (var i = 0; i < result.length; i++) {
                        console.log(result[i].testcaseid);
-                       $(".table").append("<tbody id=tablebody><tr><td>"+result[i].planid+"</td><td>"+result[i].planname+"</td><td>"+result[i].createdtime+"</td><td>"+result[i].endtime+"</td><td>"+result[i].executiontime+" min</td> <td>"+result[i].passcount+"</td><td>"+result[i].failcount+"</td><td>"+result[i].skipcount+"</td><td>"+result[i].totaltests+"</td></tr></tbody>");
+                       $(".table").append("<tbody id=tablebody><tr><td><a>"+result[i].planid+"</a></td><td>"+result[i].planname+"</td><td>"+result[i].createdtime+"</td><td>"+result[i].endtime+"</td><td>"+result[i].executiontime+" min</td> <td>"+result[i].passcount+"</td><td>"+result[i].failcount+"</td><td>"+result[i].skipcount+"</td><td>"+result[i].totaltests+"</td></tr></tbody>");
                        }
 
 
             }
             })
             }
+
+
+
+
+
